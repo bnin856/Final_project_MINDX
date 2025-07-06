@@ -28,10 +28,23 @@ function drawBoard() {
     let num = board[i];
     
     if (num === 0) {
-      cell.className = 'cell cell-12 empty';
+      cell.className = 'cell cell-12 empty bg-black text-white';
       cell.textContent = '';
     } else {
-      cell.className = 'cell cell-' + num;
+      let colorClasses = [
+        'bg-green-100 text-green-500',
+        'bg-red-100 text-red-500', 
+        'bg-blue-100 text-blue-500',
+        'bg-purple-100 text-purple-500',
+        'bg-yellow-100 text-yellow-500',
+        'bg-pink-100 text-pink-500',
+        'bg-indigo-100 text-indigo-500',
+        'bg-gray-100 text-gray-500',
+        'bg-emerald-100 text-emerald-500',
+        'bg-amber-100 text-amber-500',
+        'bg-lime-100 text-lime-500'
+      ];
+      cell.className = 'cell cell-' + num + ' ' + colorClasses[num - 1];
       cell.textContent = num;
     }
     
