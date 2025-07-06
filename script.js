@@ -1,11 +1,11 @@
 // Khai báo các biến
-let board = [1,2,3,4,5,6,7,8,9,10,11,0]; // mảng chứa các số
-let emptyPos = 11; // vị trí ô đen
-let gameTimer; // biến timer
-let seconds = 0; // đếm giây
-let stepCount = 0; // đếm bước đi
-let gameStarted = false; // game đang chạy hay chưa
-let gameHistory = []; // mảng lưu lịch sử
+let board = [1,2,3,4,5,6,7,8,9,10,11,0]; 
+let emptyPos = 11; 
+let gameTimer; 
+let seconds = 0; 
+let stepCount = 0; 
+let gameStarted = false; 
+let gameHistory = []; 
 
 // Lấy các thẻ HTML
 let startButton = document.querySelector('.start-btn');
